@@ -1,0 +1,223 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5; /* Match the background color in the image */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust logo size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #333;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+.cart a {
+    font-size: 20px;
+    color: #333;
+}
+
+.cart a:hover {
+    color: #555;
+}
+
+/*NAVBAR STYLING*/
+
+
+/*SLIDESHOW CSS*/
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full page height */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Individual slideshow images */
+.slideshow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Adjust blur effect */
+    opacity: 0; /* Adjust watermark-like effect */
+    animation: fade 12s infinite; /* Add animation for slideshow */
+}
+
+.slideshow-image.active {
+    opacity: 0.6; /* Show the active image with watermark effect */
+}
+
+/*@keyframes fade {
+    0% { opacity: 0; }
+    33% { opacity: 0.6; }
+    66% { opacity: 0.6; }
+    100% { opacity: 0; }
+}*/
+
+/*SLIDESHOW CSS*/
+
+/* Info section styling */
+.info-section {
+    display: flex; /* Display columns in a row */
+    justify-content: space-between; /* Spread columns evenly */
+    padding: 50px 20px; /* Padding around the section */
+    background-color: #f5f5f5; /* Optional: a light background color for contrast */
+    text-align: center;
+}
+
+.info-column {
+    flex-basis: 30%; /* Each column takes about 30% of the width */
+    padding: 20px;
+}
+
+.info-column h2 {
+    font-size: 36px; /* Large text size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px;
+}
+
+.info-column p {
+    font-size: 18px; /* Slightly smaller text for the descriptions */
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+    
+    .info-column {
+        margin-bottom: 30px; /* Add some space between stacked columns */
+    }
+}
+
+/* Info section styling */
+
+/* Project Section */
+.project-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.project-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Category Tabs */
+.category-tabs ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-tabs ul li {
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.category-tabs ul li.active-tab {
+    color: #007BFF; /* Blue underline color */
+    border-bottom: 3px solid #007BFF;
+}
+
+/* Projects Row */
+.projects-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Project Cards */
+.project-card {
+    flex-basis: 30%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}

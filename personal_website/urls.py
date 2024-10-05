@@ -22,5 +22,5 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mysite/', include("mysite.urls")),
+    path('', include("mysite.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # Add the part after the plus sign (+)

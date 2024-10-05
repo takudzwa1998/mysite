@@ -1,17 +1,136 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
- <h1>Welcome to My Website. This is the home page</h1>
- <nav class="nav nav-pills nav-fill">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-    <a class="nav-link" href="#">Much longer nav link</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link disabled">Disabled</a>
-  </nav>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo">
+                <!-- Replace with your logo -->
+                <img src="{% static 'images/lion.png' %}" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="about/">About Me</a></li>
+                <li><a href="projects/">Projects</a></li>
+                <li><a href="consulting/">Consulting</a></li>
+                <li><a href="blog/">Blog</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            <div class="cart">
+                <a href="/cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="slideshow-container">
+      <div class="slideshow-image" style="background-image: url('{% static 'images/IMG_8387.jpg' %}');"></div>
+      <div class="slideshow-image" style="background-image: url('{% static 'images/IMG_8391.jpg' %}');"></div>
+  </div>
+
+  <div class="info-section">
+    <div class="info-column">
+        <h2>Column 1 Title</h2>
+        <p>Some description or information for column 1.</p>
+    </div>
+    <div class="info-column">
+        <h2>Column 2 Title</h2>
+        <p>Some description or information for column 2.</p>
+    </div>
+    <div class="info-column">
+        <h2>Column 3 Title</h2>
+        <p>Some description or information for column 3.</p>
+    </div>
+</div>
+
+<div class="project-section">
+  <h2>Projects I have worked on:</h2>
+  <div class="category-tabs">
+      <ul>
+          <li class="active-tab">Engineering</li>
+          <li>programming</li>
+          <li>Web Development</li>
+          <li>Graphic Designing</li>
+          <li>Event Management</li>
+      </ul>
+  </div>
+
+  <!-- Project Thumbnails for Engineering -->
+  <div class="projects-row" data-category="engineering" style="display: flex;">
+      <div class="project-card">
+          <img src="{% static 'images/IMG_8376.jpg' %}" alt="PROJECT 1">
+          <h3>PROJECT 1</h3>
+      </div>
+      <div class="project-card">
+          <img src="{% static 'images/IMG_8376.jpg' %}" alt="PROJECT 2">
+          <h3>PROJECT 2</h3>
+      </div>
+  </div>
+
+  <!-- Project Thumbnails for Programming (Initially hidden) -->
+  <div class="projects-row" data-category="programming" style="display: none;">
+      <div class="project-card">
+          <img src="{% static 'images/jjk.jpg' %}" alt="Project 1">
+          <h3>Programming Project 1</h3>
+      </div>
+      <div class="project-card">
+          <img src="{% static 'images/jjk.jpg' %}" alt="Project 2">
+          <h3>Programming Project 2</h3>
+      </div>
+  </div>
+
+  <!-- Project Thumbnails for Web Development (Initially hidden) -->
+  <div class="projects-row" data-category="web-development" style="display: none;">
+      <div class="project-card">
+          <img src="{% static 'images/taku.jpg' %}" alt="Project 1t">
+          <h3>Web Development Project 1</h3>
+      </div>
+      <div class="project-card">
+          <img src="{% static 'images/taku.jpg' %}" alt="Project 1">
+          <h3>Web Development Project 2</h3>
+      </div>
+  </div>
+
+  <!-- Project Thumbnails for Graphic Designing (Initially hidden) -->
+  <div class="projects-row" data-category="graphic-designing" style="display: none;">
+      <div class="project-card">
+          <img src="{% static 'images/IMG_2377.jpg' %}" alt="Project 1">
+          <h3>Graphic Design Project 1</h3>
+      </div>
+      <div class="project-card">
+          <img src="{% static 'images/IMG_2377.jpg' %}" alt="Project 2">
+          <h3>Graphic Design Project 2</h3>
+      </div>
+  </div>
+
+  <!-- Project Thumbnails for Photography (Initially hidden) -->
+  <div class="projects-row" data-category="photography" style="display: none;">
+      <div class="project-card">
+          <img src="{% static 'images/photo1.jpg' %}" alt="Photography Project">
+          <h3>Photography Project 1</h3>
+      </div>
+      <div class="project-card">
+          <img src="{% static 'images/photo2.jpg' %}" alt="Photography Project">
+          <h3>Photography Project 2</h3>
+      </div>
+  </div>
+</div>
+
+  <script src="{% static 'js/slideshow.js' %}"></script>
+  <script src="{% static 'js/tabs.js' %}"></script>
+
 </body>
 </html>
