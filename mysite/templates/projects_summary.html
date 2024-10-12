@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<div class="project-section">
+    <h2>Projects I have worked on:</h2>
+    <div class="category-tabs">
+        <ul>
+            <li class="active-tab">Software Engineering</li>
+            <li>Clubs & Philanthropy</li>
+            <li>Personal</li>
+        </ul>
+    </div>
+  
+    <!-- Project Thumbnails for Engineering -->
+    <div class="projects-row" data-category="software-engineering" style="display: flex;">
+        <div class="project-card" style="background-image: url('{% static 'images/av2.jpg' %}');">
+            <!-- <img src="{% static 'images/av.jpg' %}" alt="AI-Based security solution for AVLYTICS"> -->
+            <h3>AI-Based security solution for AVLYTICS</h3>
+        </div>
+        <div class="project-card" style="background-image: url('{% static 'images/cicd3.jpg' %}');">
+            <!-- <img src="{% static 'images/cicd3.jpg' %}" alt="CI/CD Infrastructure"> -->
+            <h3>CI/CD Infrastructure</h3>
+        </div>
+        <div class="project-card">
+          <img src="{% static 'images/intern.jpg' %}" alt="2021 Internship Program">
+          <h3>2021 Internship Program</h3>
+      </div>
+      <div class="project-card">
+          <img src="{% static 'images/uct.jpg' %}" alt="My 2020 Final Year Project">
+          <h3>My 2020 Final Year Project</h3>
+      </div>
+    </div>
+  
+    <!-- Project Thumbnails for Clubs & Philanthropy (Initially hidden) -->
+    <div class="projects-row" data-category="clubs-&-philanthropy" style="display: none;">
+        <div class="project-card">
+            <img src="{% static 'images/enactus.jpg' %}" alt="ENACTUS 2019">
+            <h3>ENACTUS 2019 MTN ICT CHALLENGE</h3>
+        </div>
+        <div class="project-card" >
+            <img src="{% static 'images/SHAWCO.jpg' %}" alt="SHAWCO 2018">
+            <h3>SHAWCO 2018</h3>
+        </div>
+        <div class="project-card">
+          <img src="{% static 'images/tk_reduced.jpg' %}" alt="Orientation Leader (2019, 2020)">
+          <h3>Orientation Leader (2019, 2020)</h3>
+      </div>
+      <!-- <div class="project-card">
+          <img src="{% static 'images/jjk.jpg' %}" alt="Project 2">
+          <h3>Poetry Society Founding Member</h3>
+      </div> -->
+    </div>
+  
+    <!-- Project Thumbnails for Photography (Initially hidden) -->
+    <div class="projects-row" data-category="personal" style="display: none;">
+        <div class="project-card">
+            <img src="{% static 'images/IMG_8387.jpg' %}" alt="My Personal Website">
+            <h3>My Personal Website</h3>
+        </div>
+  
+    </div>
+  </div>
+
