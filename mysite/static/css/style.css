@@ -241,3 +241,71 @@
     bottom: 0;
     left: 0;
 }
+
+
+
+
+
+
+
+
+/* Tabs Styling */
+/* Tabs Styling */
+.category-tabs ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.category-tabs ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Tab Content Styling */
+.tab-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Individual Project Styling */
+.project {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.project-img {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.project-description p {
+    font-size: 16px;
+}
+
+/* Hide inactive tabs */
+.tab-pane {
+    display: none;
+}
+
+.active-pane {
+    display: block;
+}

@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<div class="project-section">
+    <!-- Tab Navigation -->
+    <div class="category-tabs">
+        <ul>
+            <li class="tab-link active-tab" data-tab="software-engineering_">Software Engineering</li>
+            <li class="tab-link" data-tab="clubs-&-philanthropy_">Clubs & Philanthropy</li>
+            <li class="tab-link" data-tab="personal_">Personal</li>
+        </ul>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+        <!-- Engineering Projects -->
+        <div id="software-engineering_" class="tab-pane active-pane">
+
+            <div class="project">
+                <img src="{% static 'images/av2.jpg' %}" alt="Engineering Project" class="project-img">
+                <div class="project-description">
+                    <h3>AI Based security solution for AVLYTICS</h3>
+                    <p>This is the description for the first engineering project.</p>
+                    <ul>
+                        <li>Feature 1: This project focuses on X.</li>
+                        <li>Feature 2: It utilizes Y technology.</li>
+                        <li>Feature 3: Implemented for Z purpose.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="{% static 'images/cicd3.jpg' %}" alt="Engineering Project" class="project-img">
+                <div class="project-description">
+                    <h3>CI/CD Infrastructure</h3>
+                    <p>This is the description for the second engineering project.</p>
+                    <ul>
+                        <li>Feature 1: This project focuses on X.</li>
+                        <li>Feature 2: It utilizes Y technology.</li>
+                        <li>Feature 3: Implemented for Z purpose.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="{% static 'images/intern.jpg' %}" alt="Engineering Project" class="project-img">
+                <div class="project-description">
+                    <h3>2021 Internship Program</h3>
+                    <p>This is the description for the third engineering project.</p>
+                    <ul>
+                        <li>Feature 1: This project focuses on X.</li>
+                        <li>Feature 2: It utilizes Y technology.</li>
+                        <li>Feature 3: Implemented for Z purpose.</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Clubs Projects -->
+        <div id="clubs-&-philanthropy_" class="tab-pane">
+
+            <div class="project">
+                <img src="{% static 'images/enactus.jpg' %}" alt="Clubs Project" class="project-img">
+                <div class="project-description">
+                    <h3>ENACTUS 2019 MTN ICT CHALLENGE</h3>
+                    <p>This is the description for the first programming project.</p>
+                    <ul>
+                        <li>Feature 1: This project focuses on X.</li>
+                        <li>Feature 2: It utilizes Y technology.</li>
+                        <li>Feature 3: Implemented for Z purpose.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="{% static 'images/SHAWCO.jpg' %}" alt="Clubs Project" class="project-img">
+                <div class="project-description">
+                    <h3>SHAWCO 2018</h3>
+                    <p>This is the description for the first programming project.</p>
+                    <ul>
+                        <li>Feature 1: This project focuses on X.</li>
+                        <li>Feature 2: It utilizes Y technology.</li>
+                        <li>Feature 3: Implemented for Z purpose.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="{% static 'images/tk_reduced.jpg' %}" alt="Clubs Project" class="project-img">
+                <div class="project-description">
+                    <h3>Orientation Leader (2019, 2020)</h3>
+                    <p>This is the description for the first programming project.</p>
+                    <ul>
+                        <li>Feature 1: This project focuses on X.</li>
+                        <li>Feature 2: It utilizes Y technology.</li>
+                        <li>Feature 3: Implemented for Z purpose.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Add more programming projects here -->
+        </div>
+
+        <!-- Personal Projects -->
+        <div id="personal_" class="tab-pane">
+            
+            <div class="project">
+                <img src="{% static 'images/IMG_8387.jpg' %}" alt="Personal Project" class="project-img">
+                <div class="project-description">
+                    <h3>My Personal Website</h3>
+                    <p>This is the description for the first programming project.</p>
+                    <ul>
+                        <li>Feature 1: This project focuses on X.</li>
+                        <li>Feature 2: It utilizes Y technology.</li>
+                        <li>Feature 3: Implemented for Z purpose.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Add more tab panes for other categories (web-development, graphic-design, etc.) -->
+    </div>
+</div>
+
+</html>
